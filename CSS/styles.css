@@ -1,0 +1,32 @@
+header {
+  background-color: var(--white);
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.header-logo {
+  width: 250px;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.menu-items a {
+  padding: 0 var(--10px);
+  color: var(--font-color-light);
+}

@@ -4,7 +4,9 @@
   --font-color-base: #666;
   --font-color-dark: #212529;
   --font-color-light: #b0aebe;
+  --font-color-contrast: #00ccff;
   --bg-contrast: rgba(246, 248, 249, 0.8);
+  --footer-color: #001e2b;
 
   --5px: 0.313rem;
   --10px: 0.625rem;
@@ -27,7 +29,7 @@ move to a different part of the page. */
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   /* This is set to make sure the browser doesn't change the line-spacing. */
@@ -53,7 +55,8 @@ img {
   border-style: none;
 }
 
-.btn {
+.btn-light,
+.btn-dark {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -69,6 +72,9 @@ img {
   transition: ease-in-out 0.3s;
 }
 
+.btn-light { background-image: linear-gradient(90deg, var(--font-color-light) 0%,#737fbc 100%); }
+.btn-dark { background-image: linear-gradient(90deg,#0c71c3 0%,#3f465e 100%); }
+
 .title-container {
   display: flex;
   flex-direction: column;
@@ -79,7 +85,7 @@ img {
   justify-content: center;
   align-content: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .grid-container {
