@@ -1,0 +1,97 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aebe;
+  --bg-contrast: rgba(246, 248, 249, 0.8);
+
+  --5px: 0.313rem;
+  --10px: 0.625rem;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --15px: 0.938rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --30px: 1.875rem;
+  --40px: 2.5rem;
+  --50px: 3.125rem;
+  --75px: 4.688rem;
+  --100px: 6.25rem;
+  --150px: 9.75rem;
+}
+
+/* Makes it so that the page scrolls instead of skipping when using anchor tags to 
+move to a different part of the page. */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  /* This is set to make sure the browser doesn't change the line-spacing. */
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--font-color-base);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  /* The words can't be selected. */
+  user-select: none;
+  background-color: transparent;
+  /* Gives the button a clean edge. */
+  border: 1px solid transparent;
+  padding: var(--5px) var(--12px);
+  border-radius: var(--20px);
+  /* If a hover effect is added, this will create a smooth transition. */
+  transition: ease-in-out 0.3s;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-width: 900px;
+}
