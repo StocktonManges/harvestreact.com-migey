@@ -1,5 +1,8 @@
 header {
   background-color: var(--white);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header > div {
@@ -29,4 +32,38 @@ header > div {
 .menu-items a {
   padding: 0 var(--10px);
   color: var(--font-color-light);
+}
+
+.parallax {
+  background-blend-mode: multiply;
+  background-image: linear-gradient(143deg,#0e95ef 0%,#00083d 100%), url(https://harvestreact.com/wp-content/uploads/2022/12/low-angle-view-skyscrapers.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 75px;
+}
+
+.parallax .title-container {
+  font-size: var(--40px);
+  font-weight: 600;
+  color: white;
+}
+
+.parallax .title-container > span {
+  letter-spacing: 5;
+  font-size: var(--20px);
+}
+
+.parallax .title-container > div {
+  padding: var(--20px) 0;
+}
+
+.parallax .title-container div > span {
+  color: var(--font-color-contrast);
+}
+
+.first-parallax-break {
+  background-color: var(--white);
+  height: fit-content;
 }

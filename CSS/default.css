@@ -58,7 +58,11 @@ img {
 .btn-light,
 .btn-dark {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: var(--12px);
+  color: var(--white);
+  letter-spacing: 2;
+  width: fit-content;
   text-align: center;
   cursor: pointer;
   /* The words can't be selected. */
@@ -66,8 +70,8 @@ img {
   background-color: transparent;
   /* Gives the button a clean edge. */
   border: 1px solid transparent;
-  padding: var(--5px) var(--12px);
-  border-radius: var(--20px);
+  padding: var(--15px) var(--20px);
+  border-radius: var(--5px);
   /* If a hover effect is added, this will create a smooth transition. */
   transition: ease-in-out 0.3s;
 }
@@ -80,12 +84,12 @@ img {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 100px 15px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 100%;
   max-width: 800px;
+  text-align: center;
 }
 
 .grid-container {
