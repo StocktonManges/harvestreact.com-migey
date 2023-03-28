@@ -5,7 +5,7 @@
   --font-color-dark: #212529;
   --font-color-light: #b0aebe;
   --font-color-contrast: #00ccff;
-  --bg-contrast: rgba(246, 248, 249, 0.8);
+  --bg-contrast: #F2F2FA;
   --footer-color: #001e2b;
 
   --5px: 0.313rem;
@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   font-size: 0.875rem;
   /* This is set to make sure the browser doesn't change the line-spacing. */
-  line-height: 1.6;
+  line-height: 2;
   letter-spacing: 0;
   color: var(--font-color-base);
   margin: 0;
@@ -53,6 +53,7 @@ img {
   max-width: 100%;
   vertical-align: middle;
   border-style: none;
+  border-radius: var(--15px);
 }
 
 .btn-light,
@@ -61,7 +62,7 @@ img {
   font-weight: 600;
   font-size: var(--12px);
   color: var(--white);
-  letter-spacing: 2;
+  letter-spacing: 3;
   width: fit-content;
   text-align: center;
   cursor: pointer;
@@ -70,7 +71,7 @@ img {
   background-color: transparent;
   /* Gives the button a clean edge. */
   border: 1px solid transparent;
-  padding: var(--15px) var(--20px);
+  padding: var(--15px) var(--30px);
   border-radius: var(--5px);
   /* If a hover effect is added, this will create a smooth transition. */
   transition: ease-in-out 0.3s;
@@ -98,10 +99,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
-  justify-content: center;
-  align-content: center;
+  justify-items: center;
+  align-items: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
 }
