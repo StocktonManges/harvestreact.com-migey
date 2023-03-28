@@ -14,6 +14,7 @@ header > div {
   width: 100%;
   max-width: 1000px;
   margin: auto;
+  z-index: 100;
 }
 
 .header-logo {
