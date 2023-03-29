@@ -5,6 +5,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 50;
 }
 
 header > div {
@@ -46,6 +47,8 @@ header > div {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: 75px;
+  background-size: cover;
+  background-position-x: center;
 }
 
 .parallax-home .title-container {
@@ -129,18 +132,47 @@ header > div {
 }
 
 .our-services > div h3 {
-  font-size: var(--30px);
+  font-size: var(--40px);
   color: var(--font-color-dark);
+  font-weight: 600;
 }
 
 .service-card {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  padding: var(--30px);
+  padding: var(--20px);
   border-radius: var(--10px);
   height: 100%;
   position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+}
+
+.service-card span i {
+  font-size: var(--30px);
+  padding: var(--20px);
+  border-radius: 50%;
+  margin-bottom: var(--20px);
+}
+
+.ad-partnerships i {
+  color: #7a69e6;
+  background-color: rgba(122,105,230,0.3);
+}
+
+.social-media-growth i {
+ color: #FA5E5D;
+ background-color: rgba(250,94,93,0.3);
+}
+
+.ecom-partnerships i {
+ color: #f98d5e;
+ background-color: rgba(249,141,94,0.3);
+}
+
+.seo i {
+ color: #76ce44;
+ background-color: rgba(118,206,68,0.3);
 }
 
 .service-card h4 {
@@ -162,8 +194,45 @@ header > div {
   background-color: var(--white);
   background-image: none;
   color: var(--font-color-light);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
 }
 
 .our-services > div > a {
   margin-top: var(--150px);
+}
+
+/************************************ .inquire-now */
+
+.inquire-now {
+  background-image: url(../Assets/twisted-glass.jpg);
+  background-size: cover;
+  padding-bottom: var(--100px);
+  background-attachment: fixed;
+}
+
+.inquire-now .title-container {
+  color: var(--white);
+}
+
+.inquire-now .title-container span {
+  letter-spacing: 5;
+  font-size: var(--20px);
+}
+
+.inquire-now .title-container h2 {
+  font-size: 3.438rem;
+  margin: 0;
+}
+
+.contact-cards {
+  padding: var(--75px) 0;
+}
+
+.contact-us, .hours {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: var(--30px);
+  border-radius: var(--10px);
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
 }
