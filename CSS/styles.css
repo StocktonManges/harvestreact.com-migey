@@ -285,5 +285,95 @@ footer .container h6 {
 .parallax-ad-partners {
   background-image: 
     linear-gradient(143deg,#0e95ef 0%,#00083d 100%),
+    url(../Assets/three-way-road-fork.jpg);
+}
+
+/************************************ .program-overview */
+
+.program-overview {
+  background-color: var(--bg-contrast);
+}
+
+.program-overview .title-container {
+  text-align: justify;
+  color: var(--font-color-base);
+  max-width: 1200px;
+}
+
+.program-overview h3 {
+  width: 100%;
+  color: var(--font-color-dark);
+  font-size: var(--30px);
+  margin: 0;
+}
+
+.program-overview p { width: 100%; }
+
+.program-overview p > a { color: var(--font-color-contrast); }
+
+.program-overview .title-container > a { box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3); }
+
+/************************************ .testimonials */
+
+.testimonials h3 {
+  width: 100%;
+  max-width: 1200px;
+  margin: var(--30px) auto;
+  color: var(--font-color-contrast);
+  font-size: var(--30px);
+  text-align: center;
+}
+
+.testimonials .grid-container > div:first-child { max-width: 532px; }
+
+.testimonial-wrappers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-wrappers > div:first-child { 
+  margin-bottom: var(--30px); 
+}
+
+.testimonial-card.grid-container {
+  grid-template-columns: auto 1fr;
+  width: 100%;
+  align-items: start;
+  background-color: var(--bg-contrast);
+  border-radius: var(--15px);
+  padding: var(--40px) var(--30px);
+  text-align: justify;
+}
+
+.testimonial-card img {
+  clip-path: circle();
+  width: var(--100px);
+}
+
+.testimonial-card.grid-container p { margin: 0; }
+
+.testimonial-card.grid-container span {
+  display: block;
+  margin-top: var(--30px);
+  color: var(--font-color-dark);
+  font-weight: 600;
+
+}
+
+/************************************************** ecom partners */
+
+.parallax-ecom-partners {
+  background-image: 
+    linear-gradient(143deg,#0e95ef 0%,#00083d 100%),
     url(../Assets/business-partners.jpg);
+}
+
+/************************************************** growth */
+
+.parallax-growth {
+  background-image: 
+    linear-gradient(143deg,#0e95ef 0%,#00083d 100%),
+    url(../Assets/growth-parallax-image.png);
 }

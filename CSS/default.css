@@ -79,11 +79,11 @@ img {
 
 .btn-light { 
   background-image: linear-gradient(90deg, var(--font-color-light) 0%,#737fbc 100%);
-  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.25)
+  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.25);
 }
 .btn-dark { 
   background-image: linear-gradient(90deg,#0c71c3 0%,#3f465e 100%);
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2)
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 .title-container {
@@ -131,6 +131,7 @@ img {
 .parallax-title-container .title-container span:first-child {
   letter-spacing: 5;
   font-size: var(--20px);
+  font-weight: 600;
 }
 
 .parallax-title-container .title-container .title {
