@@ -1,42 +1,3 @@
-/************************************************** header */
-
-header {
-  background-color: var(--white);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 50;
-}
-
-header > div {
-  display: flex;
-  align-items: center;
-  height: 75px;
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.header-logo {
-  width: 250px;
-}
-
-.btn-menu {
-  display: none;
-}
-
-.menu-items {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  text-align: right;
-}
-
-.menu-items a {
-  padding: 0 var(--10px);
-  color: var(--font-color-base);
-}
-
 /************************************************** home */
 
 .parallax-home {
@@ -201,85 +162,6 @@ header > div {
   margin-top: var(--150px);
 }
 
-/************************************ .inquire-now */
-
-.inquire-now {
-  background-image: url(../Assets/twisted-glass.jpg);
-  background-size: cover;
-  padding-bottom: var(--100px);
-  background-attachment: fixed;
-}
-
-.inquire-now .title-container {
-  color: var(--white);
-}
-
-.inquire-now .title-container span {
-  letter-spacing: 5;
-  font-size: var(--20px);
-}
-
-.inquire-now .title-container h2 {
-  font-size: 3.438rem;
-  margin: 0;
-}
-
-.contact-cards {
-  padding: var(--75px) 0;
-}
-
-.contact-us, .hours {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding: var(--30px);
-  border-radius: var(--10px);
-  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 1), transparent);
-}
-
-.contact-us span i {
-  background-color: #0C71C3;
-  color: var(--white);
-}
-
-.hours span i {
-  background-color: rgba(12,113,195,0.18);
-  color: #0C71C3;
-}
-
-.contact-us h6, .hours h6 {
-  font-size: var(--16px);
-  color: var(--font-color-dark);
-  margin: 0;
-  margin-bottom: var(--20px);
-}
-
-.contact-us div, .hours div {
-  line-height: 1.5;
-}
-
-footer {
-  background-color: var(--footer-color);
-}
-
-footer .container {
-  display: flex;
-  width: fit-content;
-  margin: auto;
-  color: var(--white);
-  font-size: var(--12px);
-  align-items: center;
-}
-
-footer .container > div:first-child {
-  width: var(--100px);
-}
-
-footer .container h6 {
-  font-size: var(--14px);
-  margin: 0;
-}
-
 /************************************************** ad partners */
 
 .parallax-ad-partners {
@@ -315,10 +197,12 @@ footer .container h6 {
 
 /************************************ .testimonials */
 
+.testimonials { padding: var(--100px) 0; }
+
 .testimonials h3 {
   width: 100%;
   max-width: 1200px;
-  margin: var(--30px) auto;
+  margin: 0 auto var(--30px);
   color: var(--font-color-contrast);
   font-size: var(--30px);
   text-align: center;
