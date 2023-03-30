@@ -112,3 +112,37 @@ img {
   width: 100%;
   max-width: 1200px;
 }
+
+.parallax-title-container { 
+  background-blend-mode: multiply;
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 75px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.parallax-title-container .title-container {
+  color: var(--white);
+}
+
+.parallax-title-container .title-container span:first-child {
+  letter-spacing: 5;
+  font-size: var(--20px);
+}
+
+.parallax-title-container .title-container .title {
+  padding: 0;
+  line-height: 1.6;
+  font-size: var(--40px);
+  font-weight: 600;
+  color: white;
+}
+
+.parallax-title-container .title-container div {
+  font-size: var(--20px);
+}
+
+.parallax-title-container .title-container a { margin-top: var(--50px); }}
