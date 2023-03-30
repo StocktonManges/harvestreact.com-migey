@@ -148,7 +148,7 @@ header > div {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
 }
 
-.service-card span i {
+.service-card span i, .inquire-now i {
   font-size: var(--30px);
   padding: var(--20px);
   border-radius: 50%;
@@ -234,5 +234,48 @@ header > div {
   text-align: center;
   padding: var(--30px);
   border-radius: var(--10px);
-  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 1), transparent);
+}
+
+.contact-us span i {
+  background-color: #0C71C3;
+  color: var(--white);
+}
+
+.hours span i {
+  background-color: rgba(12,113,195,0.18);
+  color: #0C71C3;
+}
+
+.contact-us h6, .hours h6 {
+  font-size: var(--16px);
+  color: var(--font-color-dark);
+  margin: 0;
+  margin-bottom: var(--20px);
+}
+
+.contact-us div, .hours div {
+  line-height: 1.5;
+}
+
+footer {
+  background-color: var(--footer-color);
+}
+
+footer .container {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  color: var(--white);
+  font-size: var(--12px);
+  align-items: center;
+}
+
+footer .container > div:first-child {
+  width: var(--100px);
+}
+
+footer .container h6 {
+  font-size: var(--14px);
+  margin: 0;
 }
