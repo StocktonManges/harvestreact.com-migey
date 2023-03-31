@@ -214,7 +214,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .testimonial-wrappers > div:first-child { 
@@ -243,7 +243,6 @@
   margin-top: var(--30px);
   color: var(--font-color-dark);
   font-weight: 600;
-
 }
 
 /************************************************** ecom partners */
@@ -253,6 +252,55 @@
     linear-gradient(143deg,#0e95ef 0%,#00083d 100%),
     url(../Assets/business-partners.jpg);
 }
+
+/************************************ .qualifications */
+
+.qualifications { 
+  padding-bottom: 100px;
+  background-color: var(--bg-contrast);
+}
+
+.qualifications .title-container {
+  color: var(--font-color-base);
+}
+
+.qualifications .title-container:first-child {
+  align-items: start;
+  text-align: left;;
+}
+
+.qualifications .grid-container h3 {
+  font-size: var(--30px);
+  font-weight: 600;
+  color: var(--font-color-dark);
+  width: 100%;
+  margin: 0;
+}
+
+.qualifications .title-container:first-child div {
+  color: var(--font-color-dark);
+  font-weight: 500;
+}
+
+.qualifications ul { padding-left: var(--16px); }
+
+.qualifications div:last-child p > a { color: var(--font-color-contrast); }
+
+.qualifications .title-container:last-child { padding: 100px 0 50px; }
+
+.qualifications > div { text-align: center;}
+
+/************************************ .faqs */
+
+.faqs {
+  padding: 100px 0;
+  background-color: var(--white);
+}
+
+/************************************ .testimonials */
+/* Refer to the CSS for the 'Ad Partners' page. */
+
+.testimonials
 
 /************************************************** growth */
 
