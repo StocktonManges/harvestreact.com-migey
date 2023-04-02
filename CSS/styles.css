@@ -297,10 +297,50 @@
   background-color: var(--white);
 }
 
+.faqs .grid-container > div:first-child { width: 100%; }
+
+.faqs-list {
+  list-style-type: none;
+}
+
+.faqs-list > li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border: 1px solid #d9d9d9;
+  border-radius: var(--20px);
+  padding: var(--10px) var(--30px);
+  margin: var(--15px) 0;
+  background-color: #f4f4f4;
+  align-items: center;
+/* Creates a smooth transition when the FAQ box is clicked to open it. */
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+  height: auto;
+}
+
+.faqs-list span {
+  color: var(--font-color-contrast);
+  font-size: var(--20px);
+  font-weight: 500;
+}
+
+.faqs-list i { 
+  color: var(--font-color-contrast);
+  padding-left: var(--10px);
+}
+
+.faqs-list > li ul {
+  display: none;
+  grid-column: 1 / 3;
+  list-style-type: disc;
+}
+
+.faqs-list > li.active > ul {
+  display: block;
+}
+
 /************************************ .testimonials */
 /* Refer to the CSS for the 'Ad Partners' page. */
-
-.testimonials
 
 /************************************************** growth */
 

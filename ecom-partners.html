@@ -87,14 +87,56 @@
       <div class="grid-container">
         <div>
           <h3>Frequently Asked Questions</h3>
-          <ul>
-            <li>What is an Ecom Partner?<i class="fa-solid fa-caret-right"></i></li>
-            <li>Why do you collect my private information?<i class="fa-solid fa-caret-right"></i></li>
-            <li>How much work do I have to do?<i class="fa-solid fa-caret-right"></i></li>
-            <li>What liability/risk do I have?<i class="fa-solid fa-caret-right"></i></li>
-            <li>When will I get my first payment?<i class="fa-solid fa-caret-right"></i></li>
-            <li>Do I have to pay taxes?<i class="fa-solid fa-caret-right"></i></li>
-            <li>Is my personal information protected?<i class="fa-solid fa-caret-right"></i></li>
+          <ul class="faqs-list">
+            <li>
+              <span>What is an Ecom Partner?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>We help our ecom partners increase their profit margins by partnering with US-based companies to reduce various transaction fees.</li>
+              </ul>
+            </li>
+            <li>
+              <span>Why do you collect my private information?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>It's law to verify your identity when legally registering a LLC.</li>
+                <li>It's the law to submit 2 years of tax returns when opening a merchant account.</li>
+                <li>As the intermediary we have to run extensive backgrounds on our Passive Money Merchants just like we do on the Ecom Partners. Reputation is everything and is even more important for international businesses.</li>
+                <li>After we have finalized our partnership and you have received your first payment we delete your data forever.</li>
+              </ul>
+            </li>
+            <li>
+              <span>How much work do I have to do?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>We estimate it will take 4-5 hours of your time to complete the setup process. The setup process includes executing required contracts, submission of paperwork, and setting up a bank account for your company.</li>
+                <li>After the setup process, there will be very few remaining tasks, including receiving mail periodically, the occasional trip to the bank, and review and submission of documents.</li>
+                <li>We estimate it will take around 2 hours per month to maintain the partnership.</li>
+              </ul>
+            </li>
+            <li>
+              <span>What liability/risk do I have?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>You will be the owner of the LLC and connected merchant account. Your LLC is a reseller of goods.</li>
+                <li>While the potential for any personal or corporate liability is extremely low, the advertiser whose goods you are reselling is required to sign a contract with you in which they take responsibility for any and all liability you or your LLC could incur.</li>
+                <li>If you plan on opening an online business in the online space in the next 5 years that requires a high-risk merchant account, you may have difficulty opening an account.</li>
+              </ul>
+            </li>
+            <li>
+              <span>When will I get my first payment?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>Due to the many factors at play, we have stopped giving out definitive timelines as they change weekly based on the needs and of the merchant banks.</li>
+              </ul>
+            </li>
+            <li>
+              <span>Do I have to pay taxes?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>Yes, you will have to pay taxes on the compensation you receive. <strong>We do not offer any tax advice. Please consult a CPA.</strong></li>
+              </ul>
+            </li>
+            <li>
+              <span>Is my personal information protected?</span><i class="fa-solid fa-caret-right"></i>
+              <ul>
+                <li>Absolutely, we take the protection and privacy of your information very seriously. We use 128-bit AES keys and 2FA when collecting and protecting your information. We delete your data forever after the partnership has been finalized.</li>
+              </ul>
+            </li>
           </ul>
           <a href="#" class="btn-light">APPLY NOW</a>
         </div>
@@ -185,5 +227,25 @@
     </div>
   </footer>
   
+
+<!-- Expands the FAQ to show the answer when clicked. -->
+  <script>
+    // Add your JavaScript code here
+    const faqItems = document.querySelectorAll('.faqs-list > li');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+        const nestedUl = item.querySelector('ul');
+        nestedUl.classList.toggle('show');
+        if (nestedUl.classList.contains('show')) {
+          item.style.height = `${item.scrollHeight}px`;
+        } else {
+          item.style.height = 'auto';
+          item.style.height = `${item.getBoundingClientRect().height}px`;
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
