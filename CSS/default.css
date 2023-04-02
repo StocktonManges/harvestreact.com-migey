@@ -57,7 +57,18 @@ img {
   border-radius: var(--15px);
 }
 
-.btn-light,
+.grid-container div img {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 { 
+  font-size: var(--40px);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn-light-dark,
+.btn-light-light,
 .btn-dark {
   display: inline-block;
   font-weight: 600;
@@ -78,13 +89,17 @@ img {
   transition: ease-in-out 0.3s;
 }
 
-.btn-light { 
+.btn-light-dark { 
   background-image: linear-gradient(90deg, var(--font-color-light) 0%,#737fbc 100%);
-  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+.btn-light-light { 
+  background-image: linear-gradient(90deg, var(--font-color-light) 0%,#737fbc 100%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .btn-dark { 
   background-image: linear-gradient(90deg,#0c71c3 0%,#3f465e 100%);
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .title-container {
