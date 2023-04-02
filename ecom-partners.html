@@ -89,13 +89,13 @@
           <h3>Frequently Asked Questions</h3>
           <ul class="faqs-list">
             <li>
-              <span>What is an Ecom Partner?</span><i class="fa-solid fa-caret-right"></i>
+              <span>What is an Ecom Partner?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>We help our ecom partners increase their profit margins by partnering with US-based companies to reduce various transaction fees.</li>
               </ul>
             </li>
             <li>
-              <span>Why do you collect my private information?</span><i class="fa-solid fa-caret-right"></i>
+              <span>Why do you collect my private information?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>It's law to verify your identity when legally registering a LLC.</li>
                 <li>It's the law to submit 2 years of tax returns when opening a merchant account.</li>
@@ -104,7 +104,7 @@
               </ul>
             </li>
             <li>
-              <span>How much work do I have to do?</span><i class="fa-solid fa-caret-right"></i>
+              <span>How much work do I have to do?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>We estimate it will take 4-5 hours of your time to complete the setup process. The setup process includes executing required contracts, submission of paperwork, and setting up a bank account for your company.</li>
                 <li>After the setup process, there will be very few remaining tasks, including receiving mail periodically, the occasional trip to the bank, and review and submission of documents.</li>
@@ -112,7 +112,7 @@
               </ul>
             </li>
             <li>
-              <span>What liability/risk do I have?</span><i class="fa-solid fa-caret-right"></i>
+              <span>What liability/risk do I have?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>You will be the owner of the LLC and connected merchant account. Your LLC is a reseller of goods.</li>
                 <li>While the potential for any personal or corporate liability is extremely low, the advertiser whose goods you are reselling is required to sign a contract with you in which they take responsibility for any and all liability you or your LLC could incur.</li>
@@ -120,29 +120,31 @@
               </ul>
             </li>
             <li>
-              <span>When will I get my first payment?</span><i class="fa-solid fa-caret-right"></i>
+              <span>When will I get my first payment?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>Due to the many factors at play, we have stopped giving out definitive timelines as they change weekly based on the needs and of the merchant banks.</li>
               </ul>
             </li>
             <li>
-              <span>Do I have to pay taxes?</span><i class="fa-solid fa-caret-right"></i>
+              <span>Do I have to pay taxes?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>Yes, you will have to pay taxes on the compensation you receive. <strong>We do not offer any tax advice. Please consult a CPA.</strong></li>
               </ul>
             </li>
             <li>
-              <span>Is my personal information protected?</span><i class="fa-solid fa-caret-right"></i>
+              <span>Is my personal information protected?</span><i class="fa-solid fa-caret-down"></i>
               <ul>
                 <li>Absolutely, we take the protection and privacy of your information very seriously. We use 128-bit AES keys and 2FA when collecting and protecting your information. We delete your data forever after the partnership has been finalized.</li>
               </ul>
             </li>
           </ul>
-          <a href="#" class="btn-light">APPLY NOW</a>
         </div>
         <div>
           <img src="./Assets/partial-body-shaking-hands.jpg" alt="partial body shaking hands">
         </div>
+      </div>
+      <div>
+        <a href="#" class="btn-light">APPLY NOW</a>
       </div>
     </section>
   
@@ -230,18 +232,29 @@
 
 <!-- Expands the FAQ to show the answer when clicked. -->
   <script>
-    // Add your JavaScript code here
+    // Get all the list items within the faqs-list
     const faqItems = document.querySelectorAll('.faqs-list > li');
-    faqItems.forEach(item => {
+
+    // Add a click event listener to each of the list items
+    faqItems.forEach((item) => {
       item.addEventListener('click', () => {
-        item.classList.toggle('active');
+        // Check if the clicked item is already active
+        const isActive = item.classList.contains('active');
+        // Deactivate all items
+        faqItems.forEach((item) => item.classList.remove('active'));
+        // Get the nested ul element
         const nestedUl = item.querySelector('ul');
-        nestedUl.classList.toggle('show');
-        if (nestedUl.classList.contains('show')) {
-          item.style.height = `${item.scrollHeight}px`;
-        } else {
-          item.style.height = 'auto';
-          item.style.height = `${item.getBoundingClientRect().height}px`;
+        // Check if the clicked item was already active
+        if (!isActive) {
+          // If it wasn't, toggle the "active" class on the clicked list item
+          item.classList.toggle('active');
+          // Set the height of the nested ul element to auto, then animate it to its full height over 0.5 sec
+          nestedUl.style.height = 'auto';
+          const fullHeight = nestedUl.scrollHeight + 'px';
+          nestedUl.style.height = '0';
+          setTimeout(() => {
+            nestedUl.style.height = fullHeight;
+          }, 0);
         }
       });
     });

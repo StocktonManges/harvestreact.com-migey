@@ -299,8 +299,14 @@
 
 .faqs .grid-container > div:first-child { width: 100%; }
 
+.faqs h3 {
+  font-size: var(--30px);
+  color: var(--font-color-dark);
+}
+
 .faqs-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .faqs-list > li {
@@ -337,6 +343,15 @@
 
 .faqs-list > li.active > ul {
   display: block;
+  transition: height 1s ease-in-out;
+  overflow: hidden;
+  height: auto;
+}
+
+.faqs > div:last-child {
+  width: 100%;
+  text-align: center;
+  margin-top: var(--100px);
 }
 
 /************************************ .testimonials */
