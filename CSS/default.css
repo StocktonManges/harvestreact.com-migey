@@ -121,7 +121,7 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 75px 25px;
   justify-items: center;
   align-items: center;
@@ -190,6 +190,7 @@ header > div {
 
 .btn-menu {
   display: none;
+  padding-right: 15px;
 }
 
 .menu-items {

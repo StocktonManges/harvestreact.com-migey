@@ -1,0 +1,42 @@
+@media screen and (max-width: 920px) {
+
+  .our-services div > .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .menu-items { display: none; }
+
+  .btn-menu { 
+    display: block;
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  div.testimonial-card.grid-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    grid-template-rows: 150px 1fr;
+    padding-top: 0;
+    align-items: center;
+  }
+  
+  h3 { text-align: center; }
+
+  .social-media-boosting .grid-container {
+    max-width: 600px;
+    gap: 50px 25px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  body { text-align: justify; }
+
+  .our-solution { text-align: center; }
+
+  .our-solution p { text-align: justify; }
+}

@@ -82,6 +82,10 @@
 
 .our-services h3 { margin-bottom: 50px; }
 
+.our-services .grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .our-services > div {
   display: flex;
   flex-direction: column;
@@ -173,12 +177,14 @@
 
 .program-overview {
   background-color: var(--bg-contrast);
+  padding: 100px 0;
 }
 
 .program-overview .title-container {
   text-align: justify;
   color: var(--font-color-base);
   max-width: 1200px;
+  padding: 0 15px;
 }
 
 .program-overview h3 {
@@ -251,7 +257,7 @@
 /************************************ .qualifications */
 
 .qualifications { 
-  padding-bottom: 100px;
+  padding: 100px 0;
   background-color: var(--bg-contrast);
 }
 
@@ -261,14 +267,18 @@
 
 .qualifications .title-container:first-child {
   align-items: start;
-  text-align: left;;
+  text-align: left;
+  padding: 0 15px;
 }
 
-.qualifications .grid-container h3 {
+.qualifications .title-container:last-child { padding: 0 15px; }
+
+.qualifications h3 {
   font-weight: 600;
   color: var(--font-color-dark);
   width: 100%;
-  margin: 0;
+  margin: 0 auto var(--30px);
+  text-align: center;
 }
 
 .qualifications .title-container:first-child div {
@@ -279,8 +289,6 @@
 .qualifications ul { padding-left: var(--16px); }
 
 .qualifications div:last-child p > a { color: var(--font-color-contrast); }
-
-.qualifications .title-container:last-child { padding: 100px 0 50px; }
 
 .qualifications > div { text-align: center;}
 
@@ -295,6 +303,8 @@
 
 .faqs h3 {
   color: var(--font-color-dark);
+  text-align: center;
+  margin: 0 auto var(--30px);
 }
 
 .faqs-list {
@@ -321,6 +331,7 @@
   color: var(--font-color-contrast);
   font-size: var(--20px);
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .faqs-list i { 
@@ -334,12 +345,18 @@
   list-style-type: disc;
 }
 
+/********************** FAQ styling when clicked. */
+
+.faqs-list > li.active { background-color: var(--white); }
+
 .faqs-list > li.active > ul {
   display: block;
   transition: height 0.5s ease-in-out;
   overflow: hidden;
   height: auto;
 }
+
+/**********************/
 
 .faqs > div:last-child {
   width: 100%;
