@@ -23,7 +23,9 @@
       <div class="header-logo">
         <img src="./Assets/harvestreact-logo-title-black.jpg" alt="logo title black">
       </div>
-      <div class="btn-menu"><i class="fa-solid fa-bars"></i></div>
+      <button class="btn-menu" aria-expanded="false" aria-controls="menuDropdown">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <div class="menu-items">
         <a href="./home.html">Home</a>
         <a href="./ad-partners.html">Ad Partners</a>
@@ -174,6 +176,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- Expands the menu items when the hamburger menu is clicked. -->
+    <script>
+      const menuButton = document.querySelector('button[aria-expanded]');
+  
+      function toggleMenu({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        menuButton.setAttribute('aria-expanded', !expanded);
+      }
+  
+      menuButton.addEventListener('click', toggleMenu);
+    </script>
   
 </body>
 </html>

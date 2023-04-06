@@ -93,10 +93,12 @@ h3 {
   background-image: linear-gradient(90deg, var(--font-color-light) 0%,#737fbc 100%);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
 }
+
 .btn-light-light { 
   background-image: linear-gradient(90deg, var(--font-color-light) 0%,#737fbc 100%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 .btn-dark { 
   background-image: linear-gradient(90deg,#0c71c3 0%,#3f465e 100%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -182,22 +184,15 @@ header > div {
   width: 100%;
   max-width: 1000px;
   margin: auto;
+  justify-content: space-between;
 }
 
 .header-logo {
   width: 250px;
 }
 
-.btn-menu {
+[aria-controls="menuDropdown"] {
   display: none;
-  padding-right: 15px;
-}
-
-.menu-items {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  text-align: right;
 }
 
 .menu-items a {
